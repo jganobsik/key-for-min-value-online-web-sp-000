@@ -28,10 +28,13 @@
 #end
 
 def key_for_min_value(name_hash)
-  
+  lowest_number = {}
+  lowest_key =  0 
+  current_lowest = 0 
   if name_hash.empty? ==  true 
     return nil 
   else 
     name_hash.each do |key, value|
+      
   
 end
