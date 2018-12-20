@@ -10,5 +10,12 @@ lowest_number = 0
     elsif lowest_number == 0 
       lowest_number = {key => value}
     elsif value < lowest_number[value]
-      lowest_number
+      lowest_number = {key => value}
+    end
+  end
+  if lowest_number == nil 
+    return nil 
+  else
+  return lowest_number[key]
+end
 end
