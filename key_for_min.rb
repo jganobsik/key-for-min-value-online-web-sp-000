@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
 lowest_number = {}
-  
+  lowest_key = nil 
   name_hash.each do |key, value|
     current_lowest = 0 
     if lowest_number.empty? == true 
@@ -18,7 +18,9 @@ lowest_number = {}
     return nil 
   else
    lowest_number.collect do |key, value|
-     key
+     lowest_key = key
+     return lowest_key
    end
+   
 end
 end
