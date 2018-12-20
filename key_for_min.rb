@@ -16,6 +16,6 @@ lowest_number = {}
   if lowest_number == nil 
     return nil 
   else
-  return lowest_number.first.first
+  return lowest_number
 end
 end
