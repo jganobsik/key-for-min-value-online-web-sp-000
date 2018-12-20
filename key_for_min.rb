@@ -16,6 +16,6 @@ lowest_number = hash.new
   if lowest_number == nil 
     return nil 
   else
-  return lowest_number[key]
+  return lowest_number.first.first
 end
 end
