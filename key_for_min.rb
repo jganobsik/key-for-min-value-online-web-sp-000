@@ -36,14 +36,16 @@ def key_for_min_value(name_hash)
     return nil 
   else 
     name_hash.each do |key, value|
-       if lowest_number.empty? == true 
           lowest_key = key
           current_lowest = value
-        elsif current_lowest > current_value
-            lowest_key = key
-            current_lowest = value
-        end
-     return lowest_key
      end
    end
+   name_hash.each do |key, value|
+     if value < current_lowest
+       lowest_key = key
+       current_lowest = value
+     end
+   end
+   return lowest_key
+   
 end
