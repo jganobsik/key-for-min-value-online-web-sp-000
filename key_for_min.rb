@@ -17,6 +17,8 @@ lowest_number = {}
   if name_hash.empty? ==  true 
     return nil 
   else
-  return lowest_number[]
+   lowest_number.collect do |key, value|
+     key
+   end
 end
 end
