@@ -43,10 +43,7 @@ def key_for_min_value(name_hash)
             lowest_number = {key => value}
             current_lowest = value
         end
-        lowest_number.collect do |key, value|
-         lowest_key = key
-         return lowest_key
-       end
+                 return lowest_key
      end
    end
 end
