@@ -13,7 +13,7 @@ lowest_number = {}
       lowest_number = {key => value}
     end
   end
-  if lowest_number == nil 
+  if lowest_number 
     return nil 
   else
   return lowest_number
